@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Protest Revolution', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #4E4E50;
+    
+}
+.video-container video {
+    width: 50%; /* Cambia el valor según el tamaño que desees */
+    height: auto; /* Para mantener la proporción */
+}
+
+/* Estilos del encabezado */
+
+header {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(65, 6, 6, 0.274);
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+header nav {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 50px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+header nav ul li a:hover {
+    text-decoration: dashed;
+}
+
+header img:hover {
+    transform: rotate(360deg);
+}
+
+#logo img:hover {
+    transform: scale(1.1);
+}
+/*menu izquierdo */
+/* Estilos para el menú desplegable en el lado izquierdo */
+.menu-left {
+    float: left;
+}
+.dropdown {
+    float: right;
+    position: relative;
+}
+
+.dropbtn {
+    background-color: #950740;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #6f2232;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(192, 165, 165, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #4d0a0a;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* Estilos para la sección de planes */
+#Planes {
+    padding: 50px 0;
+    text-align: center;
+}
+
+#Planes .fila-planes {
+    display: flex;
+    justify-content: center;
+}
+
+#Planes .col-plan {
+    margin: 0 20px; /* Espaciado entre cada plan */
+    text-decoration: none; /* Elimina el subrayado predeterminado */
+}
+
+#Planes .plan {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s; 
+    display: block;
+}
+
+#Planes .plan:hover {
+    transform: translateY(-5px); /* Efecto de levantamiento al pasar el mouse */
+}
+
+#Planes .plan img {
+    width: 100px; /* Tamaño de la imagen del plan */
+    height: auto;
+    margin-bottom: 15px;
+}
+
+#Planes .plan h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#Planes .plan p {
+    font-size: 16px;
+}
+
+
+/* Estilos del contenido principal */
+main {
+    text-align: center;
+    padding: 50px 0;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: rgba(87, 11, 11, 0.932);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f60;
+}
+
+/* Menú de navegación */
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ffe6e6;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu button {
+    margin-bottom: 10px;
+    padding: 10px;
+    color: white;
+    background-color: #631f1f;
+    border: none;
+    cursor: pointer;
+}
+
+/* Contenedor de vídeos */
+.video-container {
+    margin-left: 200px;
+}
+
+.video {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+/* Sección de bienvenida */
+#hero, #hero1 {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#hero h2, #hero1 h2 {
+    font-size: 20px;
+    margin-bottom: 100px;
+}
+
+#hero h3 {
+    font-size: 20px;
+    margin-bottom: 100px;
+}
+
+#hero h1 {
+    font-size: 60px;
+    color: #c3073f;
+    margin-bottom: 10px;
+}
+
+#hero1 p {
+    font-size: 20px;
+    color: #b88282;
+    margin-bottom: 50px;
+}
+
+/* Sección Planes */
+#planes {
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+
+#planes h2 {
+    margin-bottom: 50px;
+    font-size: 50px;
+}
+
+#planes p {
+    font-size: 20px;
+}
+
+#planes .fila {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 45px;
+}
+
+#CategoriasPeliculas {
+    padding: 20px;
+}
+
+.categoria {
+    margin-bottom: 40px;
+}
+
+.categoria h3 {
+    margin-bottom: 10px;
+}
+
+.peliculas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espacio entre las películas */
+}
+
+.pelicula {
+    width: calc(50% - 10px); /* Ancho de las películas */
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pelicula img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.pelicula h4 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.pelicula p {
+    font-size: 14px;
+    color: #1a1a1d;
+}
+.pelicula img {
+    max-width: 1000%; /* Se cambia width por max-width */
+    height: auto;
+    border-radius: 5px;
+}
+.pelicula {
+    width: calc(15% - 10px); 
+    padding: 10px;
+    background-color: #6f2232;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(59, 52, 52, 0.1);
+}
+.peliculas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 20px; /* Espacio entre las películas */
+}
+
+
+/* Sección Contacto */
+#Contacto {
+    padding: 40px; 
+    background-color: #950740; 
+}
+
+#Contacto h2 {
+    margin-bottom: 20px; }
+
+#Contacto p {
+    margin-bottom: 20px; 
+}
+
+#contact-form {
+    max-width: 600px; 
+    margin: 0 auto; 
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%; 
+    margin-bottom: 15px; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    box-sizing: border-box; 
+}
+
+#contact-form textarea {
+    height: 150px; 
+}
+
+#contact-form button {
+    background-color: #4E4E50; 
+    color: #fff; 
+    border: none;
+    border-radius: 5px; 
+    padding: 10px 20px; 
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: #c3073f; 
+}
+
+
+/* Pie de página */
+#foot {
+    background-color: #000000;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #ffffff;
+}
+
+/* Media queries */
+@media screen and (min-width: 768px) and (max-width: 990px) {
+    header {
+        background: #1a1a1d;
+    }
+
+    header nav {
+        display: block;
+        text-align: center;
+        width: 96%;
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    header {
+        background-color: #61070794;
+    }
+}
+body {
+    overflow-x: hidden; /* Oculta la barra de desplazamiento horizontal */
+}
+
